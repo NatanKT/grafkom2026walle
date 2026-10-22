@@ -7,6 +7,7 @@
     <script src="common/engine.js"></script>
     <script src="VN-GO/vngo.js"></script>
     <script src="PR-T/prt.js"></script>
+    <script src="L-T/lt.js"></script>
     <script>
       window.addEventListener('load', function() {
         var E = ENGINE.create('your_canvas', { dist: 11, targetY: 1.2, theta: 0, phi: 0.3 });
@@ -19,6 +20,7 @@
         // Part: Karakter (posisi x, y, z & arah hadap)
         E.spawn(CHARACTERS.VNGO, [-3.2, 0, 0], 0.5);
         E.spawn(CHARACTERS.PRT, [3.2, 1.45, 0.3], -0.4);
+        E.spawn(CHARACTERS.LT, [0, 0, 2.8], 2.6);
 
         E.start();
       });
